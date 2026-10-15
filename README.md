@@ -1,64 +1,82 @@
-# Commandes-Cisco-IOS
-
 # Mémo Cisco IOS
 
 ## Navigation
 
-enable → Passer en mode privilégié
+enable
+→ Passer en mode privilégié
 
-configure terminal → Entrer en mode configuration globale
+configure terminal
+→ Entrer en mode configuration globale
 
-exit → Revenir au mode précédent
+exit
+→ Revenir au mode précédent
 
-end → Retour direct au mode privilégié
+end
+→ Retour direct au mode privilégié
 
 ?
 
 → Afficher les commandes disponibles
 
-show running-config → Afficher la configuration en cours
+show running-config
+→ Afficher la configuration en cours
 
-copy running-config startup-config → Sauvegarder la configuration
+copy running-config startup-config
+→ Sauvegarder la configuration
 
 ---
 
 ## Configuration d'une interface
 
-interface g0/0 → Sélectionner l'interface
+interface g0/0
+→ Sélectionner l'interface
 
-ip address 192.168.1.250 255.255.255.0 → Configurer l'adresse IP
+ip address 192.168.1.250 255.255.255.0
+→ Configurer l'adresse IP
 
-no shutdown → Activer l'interface
+no shutdown
+→ Activer l'interface
 
-show ip interface brief → Vérifier les interfaces
+show ip interface brief
+→ Vérifier les interfaces
 
 ---
 
 ## DHCP
 
-ip dhcp excluded-address 192.168.1.240 192.168.1.250 → Exclure des adresses
+ip dhcp excluded-address 192.168.1.240 192.168.1.250
+→ Exclure des adresses
 
-ip dhcp pool DHCP_LAN1 → Créer un pool DHCP
+ip dhcp pool DHCP_LAN1
+→ Créer un pool DHCP
 
-network 192.168.1.0 255.255.255.0 → Définir le réseau
+network 192.168.1.0 255.255.255.0
+→ Définir le réseau
 
-default-router 192.168.1.250 → Définir la passerelle
+default-router 192.168.1.250
+→ Définir la passerelle
 
-dns-server 192.168.1.250 → Définir le serveur DNS
+dns-server 192.168.1.250
+→ Définir le serveur DNS
 
-show ip dhcp pool → Afficher les pools DHCP
+show ip dhcp pool
+→ Afficher les pools DHCP
 
-show ip dhcp binding → Afficher les adresses distribuées
+show ip dhcp binding
+→ Afficher les adresses distribuées
 
 ---
 
 ## Vérification
 
-ping 192.168.1.250 → Tester la communication
+ping 192.168.1.250
+→ Tester la communication
 
-show running-config → Vérifier la configuration
+show running-config
+→ Vérifier la configuration
 
-show ip interface brief → Vérifier les interfaces
+show ip interface brief
+→ Vérifier les interfaces
 
 ---
 
